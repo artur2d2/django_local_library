@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block title %}
+Vessels
+{% endblock %}
+{% block body %}
+  <div class="container">
+    <form id="values" method="post">
+    {% csrf_token %}
+      <div class="row">
+        <div class="col-md-6">
+          <div class="demo-content">
+            {{form.liquid_flux}}<br></br>Liquid Flux
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="demo-content">
+            {{form.vapor_flux}}<br></br>Vapor Flux
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="demo-content">
+            {{form.liquid_density}}<br></br>Liquid Density
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="demo-content">
+            {{form.vapor_density}}<br></br>Vapor Density
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="demo-content">
+            {{form.API}}<br></br>API Gravity
+            <br></br>
+            <input type="submit" value="Submit">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+{% endblock %}

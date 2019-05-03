@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block title %}
+    Vessel Design Results
+{% endblock %}
+{% block body %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="demo-content">Vessel Orientation:<br></br>{{orientation}}
+          </div>
+      </div>
+      <div class="col-md-12">
+        <div class="demo-content">Vessel Height (m):<br></br>{{L}}
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="demo-content">Vessel Diameter (m):<br></br>{{D}}
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="demo-content">L/D:<br></br>{{L_D}}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
