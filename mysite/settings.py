@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '%d7ak59y2sx5-5=3t18)392e9ixp(z
 DJANGO_DEBUG = ''
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
+ALLOWED_HOSTS = ['equipmentdesign.herokuapp.com', 'localhost', '127.0.0.1', '[::1]']
 
 
 # Application definition
